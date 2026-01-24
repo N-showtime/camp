@@ -1,0 +1,52 @@
+body {
+    /* 文字の色: 16進数カラーコード (#RRGGBB) */
+    color: #333333;
+
+    /* フォントサイズ */
+    font-size: 16px;
+
+    /* 行間を広げる (1.5倍) */
+    line-height: 1.5;
+
+    /* フォントの種類 */
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+/* h1タグの文字を赤くする */
+h1 {
+    /* 太字にする */
+    font-weight: bold;
+
+    /* 中央揃え */
+    text-align: center;
+
+    /* フォントサイズを大きく */
+    font-size: 32px;
+}
+
+/* クラスセレクタ: .クラス名 */
+.red-text {
+    color: red;
+}
+
+/* IDセレクタ: #ID名 */
+#special {
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
