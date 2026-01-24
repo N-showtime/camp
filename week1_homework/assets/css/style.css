@@ -52,6 +52,17 @@ body {
 
 }
 
+/* skills */
+
+/* .skill-header {
+    text-align: center;
+} */
+.skill-detail {
+  display: none;
+}
+
+
+
 @media screen and (max-width: 768px) {
     .grid {
         display: block;
