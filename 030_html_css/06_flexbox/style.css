@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+.logo {
+ font-weight: bold;
+ font-size: 24px;
+
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav li {
+    /* マウスを乗せると指の形に */
+    cursor: pointer;
+}
+
+nav li:hover {
+    /* マウスを乗せると色が変わる */
+    color: lightblue;
+}
