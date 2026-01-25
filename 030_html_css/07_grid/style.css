@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    /* 最小200px、最大1fr。画面幅に応じて自動的に列数を調整 */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: lightblue;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    min-height: 150px;
+}
