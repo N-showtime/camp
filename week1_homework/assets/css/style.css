@@ -30,6 +30,7 @@ body {
 
 
 /* grid */
+/* skills */
 .grid {
 
     margin: 0;
@@ -37,11 +38,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
 
 }
 
 .grid-item {
     list-style: none;
+    padding: 15px;
+    border: 3px solid black;
 
 
 }
@@ -61,13 +65,10 @@ body {
 
 }
 
-/* skills */
 
-/* .skill-header {
-    text-align: center;
-} */
+
 .skill-detail {
-    display: none;
+    /* display: none; */
 }
 
 
@@ -227,11 +228,13 @@ body {
 .about {
     margin: 0;
     display: flex;
+
 }
 
 /* .about-image {} */
 .about-caption {
     padding-left: 15px;
+    margin-left: 100px;
 }
 
 .about-headline {
