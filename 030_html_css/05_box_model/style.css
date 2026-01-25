@@ -1,26 +1,16 @@
-.box1 {
-    width: 200px;
-    height: 100px;
+.box-content {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
     background-color: lightblue;
-    padding: 20px;
-    margin: 30px;
-    border: 5px solid black;
+    /* box-sizing: content-box; (デフォルト) */
 }
 
-.box2 {
-    width: 200px;
-    height: 100px;
+.box-border {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
     background-color: lightgreen;
-    padding: 20px;
-    margin: 30px;
-    border: 5px solid black;
-}
-
-.box3 {
-    width: 200px;
-    height: 100px;
-    background-color: lightcoral;
-    padding: 20px;
-    margin: 30px;
-    border: 5px solid black;
+    box-sizing: border-box; 
+    /* paddingとborderを含めて300px */
 }

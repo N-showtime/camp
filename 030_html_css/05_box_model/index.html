@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ボックスモデルの練習</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="box1">ボックス1</div>
-    <div class="box2">ボックス2</div>
-    <div class="box3">ボックス3</div>
+    <h2>box-sizing: content-box (デフォルト)</h2>
+    <div class="box-content">幅300px + padding20px = 実際は340px</div>
+    
+    <h2>box-sizing: border-box (推奨)</h2>
+    <div class="box-border">幅300px (padding含む)</div>
 </body>
+
 </html>
