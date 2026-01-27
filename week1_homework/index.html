@@ -14,18 +14,13 @@
     <link rel="stylesheet" href="./assets/css/sanitize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
 
 
 </head>
 
 <body>
     <div class="hero">
-        <strong>Hello World!</strong>
+        <strong>Welcome to Hirono!</strong>
         <div id="particles-js" class="hero-particles"></div>
         <video autoplay loop muted preload>
             <source src="./assets/videos/292827_small.mp4" type="video/mp4">
@@ -48,16 +43,16 @@
         <nav class="header-nav">
             <ul class="header-navlist">
                 <li class="header-navitem">
-                    <a href="#">Introduction</a>
+                    <a href="#">Home</a>
                 </li>
                 <li class="header-navitem">
-                    <a href="#">Feature</a>
+                    <a href="#introduction">Introduction</a>
                 </li>
                 <li class="header-navitem">
-                    <a href="#">Blog</a>
+                    <a href="#skills">Skills</a>
                 </li>
                 <li class="header-navitem">
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
 
             </ul>
@@ -66,7 +61,7 @@
 
     </header>
 
-    <section class="section section-secounday">
+    <section id="introduction" class="section section-secounday">
         <h1 class="section-headline">Introduction</h1>
         <figure class="about">
             <img class="about-image" src="https://dummyimage.com/600x400/000/fff " alt="About image">
@@ -78,13 +73,16 @@
                 <h2 class="about-headline">Hobby</h2>
                 <p class="about-description">
                     Volleyball <br>
+                    Programming <br>
+                    Reading <br>
+                    Men's fashion
                 </p>
 
             </figcaption>
         </figure>
     </section>
 
-    <section class="section ">
+    <section class="section" id="skills">
         <h1 class="section-headline">Skills</h1>
 
         <ul class="grid grid-col-3">
@@ -123,16 +121,14 @@
         </ul>
 
         <div class="section-button">
-            <a href="#" class="button">
-                いいね
-
-            </a>
+            <div class="button">いいね</div>
+            <span class="btn-count">0</span>
         </div>
     </section>
 
 
 
-    <section class="section section-third">
+    <section id="contact" class="section section-third">
         <h1 class="section-headline">Contact</h1>
 
         <form class="form">

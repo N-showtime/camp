@@ -47,6 +47,7 @@ body {
     padding-left: 15px;
     border: 3px solid black;
     height: 200px;
+    border-radius: 10px;
 
 
 }
@@ -71,8 +72,19 @@ body {
     text-align: center;
     font-size: 25px;
 }
+.skill-card {
+    cursor: pointer;
+}
+
 .skill-detail {
-    /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.skill-card.is-open .skill-detail {
+
+  max-height: 300px;
 }
 
 
@@ -114,7 +126,15 @@ body {
 
 .section-button {
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    gap: 40px;
+}
+
+.btn-count {
+    margin-top: 12px;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -243,10 +263,12 @@ body {
 
 .about-headline {
     margin: 0 0 20px;
-    font-size: 30px;
+    font-size: 40px;
 }
+.about-description {
+    font-size: 25px;
 
-/* .about-description {} */
+} 
 
 @media screen and (max-width: 768px) {
     .about {
@@ -263,58 +285,8 @@ body {
     } */
     .about-headline {
         text-align: center;
-        font-size: 20px;
+        font-size: 35px;
     }
-
-}
-
-/* card */
-.card {
-    padding: 0 10px;
-
-}
-
-.card-link {
-    display: block;
-    color: black;
-    text-decoration: none;
-    position: relative;
-    transition: background-color .25s;
-
-}
-
-.card-link:hover {
-    background-color: #eee;
-
-}
-
-.card-label {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #999;
-    color: #efefef;
-    display: block;
-    padding: 5px 10px;
-    font-size: 12px;
-}
-
-.card-image {
-    width: 100%;
-    height: auto;
-}
-
-.card-info {
-    padding: 5px 10px;
-}
-
-/* .card-time */
-.card-headkine {
-    margin: 0;
-}
-
-.card-description {
-    margin: 0;
 }
 
 
