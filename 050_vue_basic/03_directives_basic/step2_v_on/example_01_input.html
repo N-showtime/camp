@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>① input イベント</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <h2>① input - 入力すると下に表示される</h2>
+    <input @input="handleInput" type="text" placeholder="ここに入力" style="padding: 4px; width: 200px;" />
+    <p style="margin-top: 8px; font-weight: bold;">入力値: {{ message }}</p>
+  </div>
+
+  <script>
+    const { createApp, ref } = Vue;
+    createApp({
+      setup() {
+        const message = ref('');
+        const handleInput = (event) => {
+          message.value = event.target.value;
+        };
+        return { message, handleInput };
+      }
+    }).mount('#app');
+  </script>
+</body>
+
+</html>

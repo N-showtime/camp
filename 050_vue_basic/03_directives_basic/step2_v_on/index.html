@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>イベントハンドリングの練習</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <p>数: {{ count }}</p>
+        <button @click="count++">増やす</button>
+        <button @click="reset">リセット</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
