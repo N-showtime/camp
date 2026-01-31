@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>応用ディレクティブ</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button @click="isOpen = !isOpen">切り替え</button>
+        <p v-if="isOpen">開いています(v-if)</p>
+        <p v-show="isOpen">開いています（v-show）</p>
+    
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
