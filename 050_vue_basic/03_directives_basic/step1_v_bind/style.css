@@ -1,0 +1,22 @@
+/* active クラス: テキストを赤色・太字にする */
+.active {
+  color: red;
+  font-weight: bold;
+}
+
+/* bold クラス: テキストを太字にする */
+.bold {
+  font-weight: bold;
+}
+折りたたむ
+
+
+
+
+
+
+
+
+
+
+
